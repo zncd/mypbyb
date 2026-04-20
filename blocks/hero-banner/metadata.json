@@ -1,0 +1,31 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-04-14T14:40:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.boostmobile.com/plans",
+    "originPage": "Plans listing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "accent",
+    "density": "minimal",
+    "purpose": "cta-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + CTA button on gradient background",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": ["promotional banners", "call-to-action sections", "upsell banners"],
+    "notSuitableFor": ["page hero headers", "image-heavy hero sections"]
+  },
+  "usage": {
+    "pagesUsing": ["/content/plans"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-14T14:40:00.000Z"
+  }
+}

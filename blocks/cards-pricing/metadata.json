@@ -1,0 +1,31 @@
+{
+  "variantName": "cards-pricing",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-14T14:40:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.boostmobile.com/plans",
+    "originPage": "Plans listing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "pricing-cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "plan name + price + feature list + CTAs",
+    "buttonCount": 3,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": ["plan pricing displays", "subscription tier comparisons", "product pricing cards"],
+    "notSuitableFor": ["image galleries", "blog article grids", "team member listings"]
+  },
+  "usage": {
+    "pagesUsing": ["/content/plans"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-14T14:40:00.000Z"
+  }
+}
