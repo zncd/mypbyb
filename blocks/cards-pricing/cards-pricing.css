@@ -1,27 +1,82 @@
+/* Cards Pricing — Boost Mobile plan pricing cards */
 .cards-pricing > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-m);
+}
+
+@media (width >= 600px) {
+  .cards-pricing > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-pricing > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .cards-pricing > ul > li {
-  border: 1px solid #dadada;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
   background-color: var(--background-color);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base);
+}
+
+.cards-pricing > ul > li:hover {
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
 }
 
 .cards-pricing .cards-pricing-card-body {
-  margin: 16px;
+  padding: var(--spacing-m);
+}
+
+.cards-pricing .cards-pricing-card-body h3 {
+  color: var(--accent-primary);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: none;
+  margin-top: 0;
+}
+
+.cards-pricing .cards-pricing-card-body p {
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--body-font-size-s);
+  line-height: 1.4;
+}
+
+.cards-pricing .cards-pricing-card-body p strong {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.cards-pricing .cards-pricing-card-body p a {
+  color: var(--accent-primary);
+  font-weight: 700;
+  font-size: var(--body-font-size-s);
+}
+
+.cards-pricing .cards-pricing-card-body p img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: var(--spacing-xs);
 }
 
 .cards-pricing .cards-pricing-card-image {
   line-height: 0;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .cards-pricing > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
   object-fit: cover;
 }

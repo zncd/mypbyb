@@ -1,58 +1,55 @@
+/* Tabs Plan Nav — Boost Mobile plan category navigation */
 .tabs-plan-nav .tabs-plan-nav-list {
   display: flex;
-  gap: 0.5ch;
+  gap: var(--spacing-m);
   max-width: 100%;
-  font-size: var(--body-font-size-xs);
+  font-size: var(--body-font-size-s);
   overflow-x: auto;
-}
-
-@media (width >= 600px) {
-  .tabs-plan-nav .tabs-plan-nav-list {
-    font-size: var(--body-font-size-s);
-  }
-}
-
-@media (width >= 900px) {
-  .tabs-plan-nav .tabs-plan-nav-list {
-    font-size: var(--body-font-size-m);
-  }
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0;
 }
 
 .tabs-plan-nav .tabs-plan-nav-list button {
   flex: 0 0 max-content;
   margin: 0;
-  border: 1px solid #dadada;
+  border: none;
+  border-bottom: 3px solid transparent;
   border-radius: 0;
-  padding: 0.5em;
-  background-color: var(--light-color);
-  color: initial;
-  font-weight: bold;
-  line-height: unset;
-  text-align: initial;
-  text-overflow: unset;
-  overflow: unset;
-  white-space: unset;
-  transition: background-color 0.2s;
+  padding: var(--spacing-s) var(--spacing-xs);
+  background-color: transparent;
+  color: var(--text-muted);
+  font-family: var(--body-font-family);
+  font-weight: 700;
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
 }
 
 .tabs-plan-nav .tabs-plan-nav-list button p {
   margin: 0;
 }
 
+.tabs-plan-nav .tabs-plan-nav-list button:hover {
+  color: var(--accent-primary);
+}
 
 .tabs-plan-nav .tabs-plan-nav-list button[aria-selected='true'] {
-  border-bottom: 1px solid var(--background-color);
-  background-color: var(--background-color);
-  cursor: initial;
+  color: var(--accent-primary);
+  border-bottom-color: var(--accent-primary);
 }
 
 .tabs-plan-nav .tabs-plan-nav-panel {
-  margin-top: -1px;
-  padding: 24px;
-  border: 1px solid #dadada;
-  overflow: auto;
+  padding: var(--spacing-m) 0;
 }
 
 .tabs-plan-nav .tabs-plan-nav-panel[aria-hidden='true'] {
   display: none;
+}
+
+@media (width >= 600px) {
+  .tabs-plan-nav .tabs-plan-nav-list {
+    font-size: var(--body-font-size-m);
+  }
 }
