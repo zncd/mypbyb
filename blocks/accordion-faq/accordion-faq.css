@@ -1,0 +1,65 @@
+/* Accordion FAQ — Boost Mobile expandable Q&A */
+.accordion-faq details {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-faq details + details {
+  margin-top: var(--spacing-s);
+}
+
+.accordion-faq details p {
+  margin-bottom: 0.8em;
+}
+
+.accordion-faq details summary {
+  position: relative;
+  padding: var(--spacing-s) var(--spacing-m);
+  padding-right: 48px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  font-size: var(--body-font-size-m);
+  transition: background-color var(--transition-base);
+}
+
+.accordion-faq details[open] summary {
+  background-color: var(--light-color);
+}
+
+.accordion-faq details summary:hover {
+  background-color: var(--light-color);
+}
+
+.accordion-faq details summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-faq details summary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%) rotate(135deg);
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--dark-color);
+  border-width: 2px 2px 0 0;
+  transition: transform var(--transition-base);
+}
+
+.accordion-faq details[open] summary::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion-faq details .accordion-faq-item-body {
+  padding: var(--spacing-s) var(--spacing-m);
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.accordion-faq details[open] .accordion-faq-item-body {
+  border-top: 1px solid var(--border-color);
+}

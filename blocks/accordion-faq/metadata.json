@@ -1,0 +1,31 @@
+{
+  "variantName": "accordion-faq",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-04-14T14:40:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.boostmobile.com/plans",
+    "originPage": "Plans listing page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "faq",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "question + answer pairs in two columns",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": ["FAQ sections", "Q&A pages", "help center content"],
+    "notSuitableFor": ["image-heavy accordions", "nested accordion content"]
+  },
+  "usage": {
+    "pagesUsing": ["/content/plans"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-14T14:40:00.000Z"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "variantName": "cards-deals",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-14T14:40:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.boostmobile.com/plans",
+    "originPage": "Plans listing page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "device-deals",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "savings badge + device image + name + pricing + CTA",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": ["device deal promotions", "product sale cards", "promotional offers"],
+    "notSuitableFor": ["text-only listings", "FAQ sections", "blog article grids"]
+  },
+  "usage": {
+    "pagesUsing": ["/content/plans"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-14T14:40:00.000Z"
+  }
+}
